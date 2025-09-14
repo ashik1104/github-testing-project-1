@@ -3,4 +3,5 @@ app = fastapi.FastAPI()
 
 @app.get("/")
 def read_root():
-    return {"string": "Hello, This is my first FastAPI app!"}
+    my_friends = ["Rifat", "Imtiaz", "Rakib", "Toky", "Arafat", "Noyon"]
+    return {"friends": my_friends}
